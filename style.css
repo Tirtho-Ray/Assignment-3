@@ -12,9 +12,29 @@
 .box{
     border: 1px solid black;
 }
+/* team-box */
 .box-1{
     height: 10px;
     width: 20%px;
     border: 1px solid gray;
 
+}
+/* team-containe */
+.team-container{
+    height: 280px;
+    width: 100%;
+}
+/* optional */
+.rax{
+    margin-top: 10%;
+}
+/* chosen-container */
+.line{
+    height: 1px;
+    width: 100px;
+    background-color: red;
+}
+/* footer */
+.high{
+    height: 600px;
 }
