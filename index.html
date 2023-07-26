@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          
+            backgroundImage:{
+              'slid-img':"url(./images/banner4.png)"
+            }
+          }
+        }
+      }
+
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .fonts{
+        font-family: 'Lato', sans-serif;
+    }
+  </style>
+</head>
+<body class=" 'Lato', sans-serif cursor-pointer">
+    <!-- navbar -->
+    <section class="h-30 md:mt-10 rounded-l-full rounded-r-full max-w-screen-xl mx-auto md:flex md:justify-between md:items-center p-8 md:bg-[#F85559]  ">
+        <div class=" flex list-none gap-8 md:text-white invisible md:visible md:gap-5" >
+            <li>Home</li>
+            <li>About</li>
+            <li>Shop</li>
+            <li>All Fruits</li>
+        </div>
+        <div class="flex justify-between">
+            <div class="flex items-center gap-3">
+                <img class="w-6 md:w-14" src="./images/logo.png" alt="">
+                <span class="font-bold md:text-2xl lg:text-4xl font-serif md:text-white" >Fruit Bust</span>
+            </div>
+            <div class="visible md:invisible"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="md:h-12 lg:h-16 lg:w-80 bg-white flex justify-between items-center p-4 rounded-l-full rounded-r-full invisible md:visible ">
+           
+           <div><input type="text" placeholder="Search Here"></div>
+            <div><i class="fa-solid fa-magnifying-glass "></i></div>
+        </div>
+    </section>
+
+    <!-- slidbar -->
+    <section class="max-w-screen-xl md:mt-10 md:mx-auto ml-8 mr-8  ">
+        <div class="carousel w-full rounded-xl md:p-12">
+
+          <!-- Slid-1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="hero h-full" style="background-image: url(./images/banner4.png)">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-2xl md:text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">Man cannot live without food.</p>
+                    <button class="btn btn-prymary">Shop now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+            <!-- slid-2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="hero h-full" style="background-image: url(./images/banner3.png)">
+                <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-2xl md:text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">Man cannot live without food.</p>
+                    <button class="btn btn-prymary">Shop now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle"></a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+            <!-- slid-3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="hero h-full w-full" style="background-image: url(./images/banner2.png)">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5  text-2xl md:text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">Man cannot live without food. </p>
+                    <button class="btn btn-prymary">Shop now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <!-- slid-4 -->
+            <div id="slide4" class="carousel-item relative w-full"> 
+              <div class="hero h-full w-" style="background-image: url(./images/banner1.png)">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <img src="/images/banner1.png" class="w-full" />
+                <div class="hero-content text-center text-neutral-content">
+                 
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-2xl md:text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">Man cannot live without food.  </p>
+                    <button class="btn btn-prymary">Shop now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- manny-fruits -->
+    <section class="bg-[#FFF] shadow- md:h-56 lg:h-60 md:max-w-5xl mx-auto md:relative md:bottom-24 lg:bottom-28 flex justify-evenly items-center rounded-xl md:shadow-xl  h-32 sm:mx-auto flex-wrap">
+      <div class="text-center w-10 md:w-28  lg:w-40">
+        <img src="./images/fruit1.png" alt="">
+        <p class="text-sm md:text-xl">Bery</p>
+      </div>
+      <div class="text-center w-8 md:w-28 lg:w-40">
+        <img src="./images/fruit2.png" alt="">
+        <p class="text-sm md:text-xl">Orenge</p>
+      </div>
+      <div class="text-center w-10 md:w-28  lg:w-40">
+        <img src="./images/fruit3.png" alt="">
+        <p class="text-sm md:text-xl">Mango</p>
+      </div>
+      <div class="text-center w-10 md:w-28  lg:w-40">
+        <img src="./images/fruit4.png" alt="">
+        <p class="text-sm md:text-xl ">Strawbry</p>
+      </div>
+      <div class="text-center w-10 md:w-28  lg:w-40">
+        <img src="./images/fruit5.png" alt="">
+        <p class="text-sm md:text-xl">Dalim</p>
+      </div>
+
+    </section>
+    <!-- Deal of the day -->
+    <section class="max-w-screen-xl mx-auto md:flex md:justify-between md:items-start text-center md:text-start ">
+      <div class="" >
+        <h1 class="text-2xl mg:text-4xl lg:text-5xl font-bold  ">Deal of the day</h1>
+        <p class="mt-3   del md:text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of <br> classical Latin  literature from 45 BC,  2000 years old.</p>
+      </div>
+      <div>
+      <div class="flex lg:gap-6 text-center md:text-2xl ml-20 mt-10 md:m-0 text-sm">
+        <div>
+          <h1>29</h1>
+          <p>Days</p>
+        </div>
+        <div>
+          <h1>:</h1>
+        </div>
+        <div>
+          <h1>15</h1>
+          <p>hour</p>
+        </div>
+        <div>
+          <h1>:</h1>
+        </div>
+        <div>
+          <h1>29</h1>
+          <p>munite</p>
+        </div>
+        <div>
+          <h1>:</h1>
+        </div>
+        <div>
+          <h1>2</h1>
+          <p>second</p>
+        </div>
+
+      </div>
+    
+    </section>
+    <!-- fruits details -->
+    <section class="max-w-screen-xl mx-auto md:mt-8 md:flex md:justify-center items-center md:gap-4 md:col-span-2 grid justify-center gap-10 mt-  ">
+      <!-- fruit-item-1 -->
+      <div class="h-full mx-auto mt-10 md:mt-0 w-72 md:w-80 text-center gap-4 p-2 box">
+        <div class="flex justify-center items-center"><img src="./images/fruit6.png" alt=""></div>
+        <p class="mt-4 text-xl">112.20$-18.85$</p>
+        <div class="mt-4">-------------------</div>
+        <p class=" mt-4 text-xl">Apple</p>
+        <div class="rating rating-lg rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div> <br>
+        <!-- model box -->
+        <button class="" onclick="my_modal_3.showModal()">Detalis</button>
+        <dialog id="my_modal_3" class="modal">
+          <form method="dialog" class="modal-box">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            <div class="flex justify-center items-center"><img src="./images/fruit6.png" alt=""></div>
+        <p class="mt-4 text-xl">112.20$-18.85$</p>
+        <p class=" mt-4 text-xl">Apple</p>
+        <div class="rating rating-lg rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div>
+            
+          </form>
+        </dialog>
+      </div>
+      <!-- fruit-item-2 -->
+      <div class="h-auto w-72 mx-auto  text-center gap-4 p-2 box">
+        <div class="flex justify-center items-center "><img class="w-32" src="./images/fruit7.png" alt=""></div>
+        <p class="mt-4 text-xl">112.20$-18.85$</p>
+        <div class="mt-4">-------------------</div>
+        <p class=" mt-4 text-xl">Orenge</p>
+       
+        <div class="rating rating-lg rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div><br>
+        <!-- The button to open modal -->
+        <label for="my_modal_6">Details</label>
+
+      
+        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <div class="flex justify-center items-center"><img src="./images/fruit7.png" alt=""></div>
+            <p class="mt-4 text-xl">112.20$-18.85$</p>
+            <p class=" mt-4 text-xl">Orenge</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+            </div>
+            
+            
+            <div class="modal-action">
+              <label for="my_modal_6" class="btn ">Close!</label>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- fruit-item-3 -->
+      <div class="h-auto w-72 mx-auto  text-center gap-4 p-2  box">
+        <div class="flex justify-center items-center"><img src="./images/fruit9.png" alt=""></div>
+        <p class="mt-4 text-xl">112.20$-18.85$</p>
+        <div class="mt-4">-------------------</div>
+        <p class=" mt-4 text-xl">Banana</p>
+        <div class="rating rating-lg rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div><br>
+        <!-- The button to open modal -->
+        <label for="my_modal_6">Details</label>
+
+      
+        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <div class="flex justify-center items-center"><img src="./images/fruit7.png" alt=""></div>
+            <p class="mt-4 text-xl">112.20$-18.85$</p>
+            <p class=" mt-4 text-xl">Orenge</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+            </div>
+            
+            
+            <div class="modal-action">
+              <label for="my_modal_6" class="btn ">Close!</label>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- fruit-item-4 -->
+      <div class="h-auto w-72 mx-auto  text-center gap-4 p-2 box shadow-2xl">
+        <div class="flex justify-center items-center"><img src="./images/fruit8.png" alt=""></div>
+        <p class="mt-4 text-xl">112.20$-18.85$</p>
+        <div class="mt-4">-------------------</div>
+        <p class=" mt-4 text-xl">Dragon</p>
+        <div class="rating rating-lg rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div><br>
+        <!-- The button to open modal -->
+        <label for="my_modal_6">Details</label>
+
+      
+        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <div class="flex justify-center items-center"><img src="./images/fruit7.png" alt=""></div>
+            <p class="mt-4 text-xl">112.20$-18.85$</p>
+            <p class=" mt-4 text-xl">Orenge</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+            </div>
+            
+            
+            <div class="modal-action">
+              <label for="my_modal_6" class="btn ">Close!</label>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+    
+    
+    
+    
+</body>
+</html>
